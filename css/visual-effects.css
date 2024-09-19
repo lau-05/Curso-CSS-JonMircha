@@ -1,0 +1,367 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+.box {
+  border: medium solid #000;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5rem;
+  width: 200px;
+  height: 200px;
+}
+
+.shadows {
+  /* color: #161676; */
+  font-size: 2rem;
+  text-align: center;
+  /* box-shadow: mov-x mov-y blur-radius spread-blur color inset/outset ; */
+  box-shadow: -1rem -1rem 1rem 1rem;
+  box-shadow: 1rem 1rem 1rem 1rem #0005;
+  box-shadow: 1rem 1rem 1rem inset;
+  box-shadow: 1rem 1rem 2rem 0.5rem #0008;
+  /* text-shadow: mov-x mov-y blur-radius color; */
+  text-shadow: 1rem 1rem 0.5rem hotpink;
+}
+
+.shadows-multiple {
+  font-size: 2rem;
+  text-align: center;
+  box-shadow: 1rem 1rem 1rem 1rem #0005, 1rem 1rem 1rem 1rem #090f69 inset,
+    -0.5rem -0.5rem 0.5rem 2rem rgb(23, 99, 219);
+  text-shadow: -1rem -1rem 0.5rem #19bc91, 1rem 1rem 0.5rem #0d6c3a;
+}
+
+.drop-shadow img {
+  max-width: 100%;
+  height: auto;
+  /* filter: drop-shadow(mov-x mov-y blur-radius color); */
+  box-shadow: 1rem 1rem 1rem 1rem #5658df;
+  filter: drop-shadow(1rem 1rem 1rem #c53fc7);
+}
+
+.drop-shadow {
+  width: 600px;
+  height: auto;
+}
+
+/*
+ https://cssgradient.io/ 
+ */
+
+.linear-gradient {
+  background-image: linear-gradient(blue, violet);
+  background-image: linear-gradient(20deg, blue, violet, yellow);
+  background-image: linear-gradient(to top bottom, blue, violet, yellow);
+  background-image: linear-gradient(180deg, blue 30%, violet 60%, yellow);
+  background-image: linear-gradient(
+    180deg,
+    skyblue 33.33%,
+    white 33.34% 66.67%,
+    skyblue 66.68%
+  );
+}
+
+.radial-gradient {
+  background-image: radial-gradient(cyan, magenta);
+  background-image: radial-gradient(circle 4rem, cyan, magenta, blue);
+  background-image: radial-gradient(
+    circle 100px,
+    cyan 30%,
+    magenta 60%,
+    blue 90%
+  );
+  background-image: radial-gradient(
+    ellipse 50px 100px,
+    cyan 30%,
+    magenta 60%,
+    yellow 90%
+  );
+  background-image: radial-gradient(circle 100px, red 50%, white 51%);
+}
+
+.conic-gradient {
+  background-image: conic-gradient(peachpuff, darkorange);
+  background-image: conic-gradient(peachpuff, darkorange, darkolivegreen);
+  background-image: conic-gradient(
+    peachpuff 0% 50%,
+    darkorange 60%,
+    darkolivegreen 80%
+  );
+  background-image: conic-gradient(
+    peachpuff 0deg 90deg,
+    darkorange 120deg 240deg,
+    darkolivegreen 270deg
+  );
+  background-image: conic-gradient(
+    from 270deg,
+    peachpuff 0deg 90deg,
+    darkorange 120deg 240deg,
+    darkolivegreen 270deg
+  );
+  background-image: conic-gradient(
+    from 90deg,
+    red 0deg 120deg,
+    white 120deg 240deg,
+    blue 240deg
+  );
+}
+
+.repeat-gradient-linear {
+  background-image: repeating-linear-gradient(
+    360deg,
+    red 0 5px,
+    yellow 10px 15px,
+    blue 20px 25px
+  );
+}
+
+.repeat-gradient-radial {
+  background-image: repeating-radial-gradient(
+    circle 4rem,
+    cyan 0 5px,
+    magenta 10px 15px,
+    yellow 20px 25px
+  );
+}
+
+.repeat-gradient-conic {
+  background-image: repeating-conic-gradient(
+    red 0 8%,
+    yellow 8% 16%,
+    black 16% 24%
+  );
+}
+
+.chart-gradient {
+  background-image: conic-gradient(cyan 0% 50%, magenta 50% 80%, yellow 80%);
+  border-radius: 50%;
+}
+
+.donut-gradient {
+  background-image: radial-gradient(white 40%, black 41%, transparent 43%),
+    conic-gradient(cyan 0% 50%, magenta 50% 80%, yellow 80%);
+  border-radius: 50%;
+}
+
+.card {
+  border: medium solid #000;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5rem;
+  width: 600px;
+  height: 400px;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* object-position: 0 50%; */
+}
+
+.filter {
+  /*
+   filter: blur(0.15rem);
+  filter: brightness(0.85);
+  filter: contrast(1.15);
+  filter: grayscale(0.15);
+  filter: sepia(0.15);
+  filter: opacity(0.85);
+  filter: drop-shadow(1rem 1rem 1rem #edab38); 
+  filter: invert(1);
+  filter: hue-rotate(0deg);
+  */
+  filter: saturate(1.5);
+}
+
+.filters-multiple {
+  filter: blur(0.1rem) hue-rotate(10deg) opacity(0.85) contrast(1.75)
+    saturate(1.25);
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.backdrop-filter,
+.backdrop-filter-multiple {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.backdrop-filter h4 {
+  border-radius: 1rem;
+  padding: 2rem;
+  font-size: 2rem;
+  color: #000;
+  background-color: rgba(211, 207, 200, 0.5);
+  backdrop-filter: grayscale(1);
+  backdrop-filter: sepia(1);
+  backdrop-filter: opacity(0.25);
+  backdrop-filter: hue-rotate(180deg);
+  backdrop-filter: blur(0.25rem);
+}
+
+.backdrop-filter-multiple h4 {
+  border-radius: 1rem;
+  padding: 2rem;
+  font-size: 2rem;
+  color: #fff;
+  background-color: rgba(224, 161, 67, 0.5);
+  backdrop-filter: blur(1rem) hue-rotate(240deg) opacity(0.75) invert(1);
+}
+
+.dark-mode {
+  background-color: #fff;
+  color: #000;
+  filter: invert(1);
+}
+
+.dark-mode img {
+  filter: invert(1);
+}
+
+.mix-blend-mode img {
+  /*
+   mix-blend-mode: normal;
+  mix-blend-mode: color;
+  mix-blend-mode: color-dodge;
+  mix-blend-mode: color-burn;
+  mix-blend-mode: screen;
+  mix-blend-mode: multiply;
+  mix-blend-mode: saturation;
+  mix-blend-mode: luminosity;
+  mix-blend-mode: hue;
+  mix-blend-mode: exclusion;
+  mix-blend-mode: difference;
+  mix-blend-mode: hard-light;
+  mix-blend-mode: darken;
+  mix-blend-mode: lighten;
+  mix-blend-mode: overlay;
+  */
+  mix-blend-mode: soft-light;
+}
+
+.bg-blend-mode {
+  background-size: cover;
+  background-position: center;
+  background-image: url("../assets/stray.png"), url("../assets/tina.JPEG");
+  /*
+   background-blend-mode: normal;
+  background-blend-mode: color;
+  background-blend-mode: color-dodge;
+  background-blend-mode: color-burn;
+  background-blend-mode: screen;
+  background-blend-mode: multiply;
+  background-blend-mode: saturation;
+  background-blend-mode: luminosity;
+  background-blend-mode: hue;
+  background-blend-mode: exclusion;
+  background-blend-mode: difference;
+  background-blend-mode: hard-light;
+  background-blend-mode: darken;
+  background-blend-mode: lighten;
+  background-blend-mode: overlay;
+  */
+  background-blend-mode: soft-light;
+}
+
+.clip-path {
+  border: none;
+  /*
+   clip-path: circle(100px at right bottom);
+  clip-path: circle(100px at 80% 30%);
+
+  clip-path: ellipse(100px at right top);
+  clip-path: ellipse(100px 50px at 80% 35%);
+
+  clip-path: inset(2rem);
+  clip-path: inset(3rem 2rem 1rem 2rem);
+  clip-path: inset(1rem round 1rem);
+  clip-path: inset(1rem round 1rem 2rem 3rem 4rem); 
+  */
+
+  /* https://bennettfeely.com/clippy/ */
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  clip-path: polygon(
+    50% 0%,
+    90% 20%,
+    100% 60%,
+    75% 100%,
+    25% 100%,
+    0% 60%,
+    10% 20%
+  );
+}
+
+.shapes {
+  border: medium solid black;
+  padding: 1rem;
+  margin: 0 auto 5rem;
+  max-width: 800px;
+}
+
+.shapes img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: 60% 0;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.shape-1 {
+  margin: 2rem 1rem 2rem 0;
+  shape-outside: circle();
+}
+
+.shape-2 {
+  margin: 2rem 0 2rem 1rem;
+  shape-outside: ellipse();
+}
+
+.shape-3 {
+  margin: 2rem 8rem 0 0;
+  shape-outside: polygon(
+    1% 19%,
+    25% 4%,
+    52% 4%,
+    59% 16%,
+    69% 37%,
+    66% 53%,
+    63% 67%,
+    72% 77%,
+    83% 84%,
+    98% 99%,
+    1% 99%
+  );
+}

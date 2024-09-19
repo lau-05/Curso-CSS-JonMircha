@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movimiento en CSS</title>
+    <link rel="stylesheet" href="css/motion.css" />
+  </head>
+  <body>
+    <h1>Movimiento en CSS</h1>
+    <hr />
+    <section class="transitions">
+      <h2>Transiciones</h2>
+      <hr>
+      <div class="box"></div>
+      <article class="card">
+        <img src="assets/stray.png" alt="Stray">
+      </article>
+    </section>
+    <hr>
+    <section class="transforms">
+    <h2>Transformaciones</h2>
+    <hr>
+    <h3>Transformaciones en 2D</h3>
+    <article class="card transform-2d">
+      <img src="assets/stray.png" alt="Stray">
+    </article>
+    <h3>Transformaciones en 3D</h3>
+    <article class="card transform-3d">
+      <img src="assets/stray.png" alt="Stray">
+    </article>
+    <h3>Origen de la Transformación</h3>
+    <article class="card transform-origin">
+      <img src="assets/stray.png" alt="Stray">
+    </article>
+    <h3>Flip Cards</h3>
+    <article class="flip-card-1">
+      <div class="flip-face flip-front">
+        <img src="assets/tina.JPEG" alt="Tina">
+      </div>
+      <div class="flip-face flip-back">
+        <img src="assets/tinabebe.JPEG" alt="Tina-Bebe">
+      </div>
+
+    </article>
+    <article class="flip-card-2">
+      <div class="flip-face flip-front">
+        <img src="assets/tina.JPEG" alt="Tina">
+      </div>
+      <div class="flip-face flip-back">
+        <img src="assets/tinabebe.JPEG" alt="Tina-Bebe">
+      </div>
+
+    </article>
+    </section>
+    <hr>
+    <section class="animations">
+      <h2>Animaciones</h2>
+      <hr>
+      <article class="card my-animation">
+        <img src="assets/stray.png" alt="Stray">
+      </article>
+      <article class="card my-animation-2">
+        <img src="assets/stray.png" alt="Stray">
+      </article>
+      <article class="card animation-multiple">
+        <img src="assets/stray.png" alt="Stray">
+      </article>
+    </section>
+    <hr>
+    <section class="motion-examples">
+      <h2>Ejemplos de Efectos de Movimiento en CSS</h2>
+      <hr>
+      <h3>FadeIn/FadeOut</h3>
+      <div class="fade-in">🐈</div>
+      <div class="fade-out">🐈</div>
+      <hr>
+     <h3>Sacudir</h3>
+      <div class="shake">☕</div>
+      <hr>
+   <h3>Pulsaciones</h3>
+      <div class="pulse">❤️S❤️</div>
+      <hr>
+   <h3>Dibujo y Animación con CSS</h3>
+      <h4>Corazón</h4>
+      <div class="heart"></div>
+      <h4>Spinner/Loader</h4>
+      <div class="spinner"></div>
+      <hr>
+      <h3>Botones Animados</h3>
+      <button class="btn anim-bottom to-left">Anim Izquierda</button>
+      <button class="btn anim-bottom to-center">Anim Centro</button>
+      <button class="btn anim-bottom to-right">Anim Derecha</button>
+      <br>
+      <button class="btn anim-bg-gradient">Fondo Gradiente</button>
+    <hr>
+    <h3>Menú de Pestañas (Tabs)</h3>
+    <nav class="tabs-menu">
+      <input type="radio" id="tab-1"name="tabs">
+      <label for="tab-1">Sección 1</label>
+      <input type="radio" id="tab-2"name="tabs">
+      <label for="tab-2">Sección 2</label>
+      <input type="radio" id="tab-3"name="tabs">
+      <label for="tab-3">Sección 3</label>
+      <input type="radio" id="tab-4"name="tabs">
+      <label for="tab-4">Sección 4</label>
+      <div class="tab-bg-hover"></div>
+    </nav>
+    <hr>
+    <h3>Menu Off Canvas</h3>
+    <input type="checkbox"class="off-canvas-btn">
+    <label class="off-canvas-burger"></label>
+    <nav class="off-canvas-menu">
+      <div class="off-canvas-menu-container">
+        <a href="#"class="off-canvas-link">Sección 1</a>
+        <a href="#"class="off-canvas-link">Sección 2</a>
+        <a href="#"class="off-canvas-link">Sección 3</a>
+        <a href="#"class="off-canvas-link">Sección 4</a>
+        <a href="#"class="off-canvas-link">Sección 5</a>
+      </div>
+    </nav>
+    <hr>
+    <h3>Ventana Modal</h3>
+    <a href="#modal-1">Abrir Modal</a>
+    <article id="modal-1" class="modal">
+      <div class="modal-container">
+        <a href="#cerrar"class="modal-close">X</a>
+        <h2>Esto es  una ventana modal</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus accusantium deserunt quae iusto modi aliquid placeat optio facere corrupti quod et veniam maiores, mollitia, dolores unde cupiditate! Ipsa, expedita repellendus!</p>
+        <ul>
+          <li><a href="">Enlace</a></li>
+          <li><a href="">Enlace</a></li>
+          <li><a href="">Enlace</a></li>
+          <li><a href="">Enlace</a></li>
+          <li><a href="">Enlace</a></li>
+          <li><a href="">Enlace</a></li>
+        </ul>
+      </div>
+    </article>
+    <hr>
+    <h3>Star Wars Intro</h3>
+    <article class="star-wars">
+      <div class="star-wars-container">
+        <h2>Episode IV</h2>
+        <h3>A NEW HOPE</h3>
+        <p>
+          It is a period of civil war.
+          Rebel spaceships, striking
+          from a hidden base, have won
+          their first victory against
+          the evil Galactic Empire.
+        </p>
+        <p>
+          During the battle, Rebel
+          spies managed to steal secret
+          plans to the Empire's
+          ultimate weapon, the DEATH
+          STAR, an armored space
+          station with enough power to
+          destroy an entire planet.
+         </p>
+         <p>
+          Pursued by the Empire's
+          sinister agents, Princess
+          Leia races home aboard her
+          starship, custodian of the
+          stolen plans that can save
+          her people and restore
+          freedom to the galaxy....
+         </p>
+      </div>
+    </article>
+  </section>
+    <br>
+    <a href="index.html#temario-css">🔼<a></a>
+  </body>
+</html>

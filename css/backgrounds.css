@@ -1,0 +1,120 @@
+/*
+|background-color:
+   define el color de fondo del elemento
+
+|background-image: 
+   define la imagen de fondo del elemento
+
+|background-size:
+   define el tamaño de la imagen de fondo, primer valor x, segundo y
+     - cover: cambia el tamaño de la imagen de fondo para asegurarse de que permanezca completamente visible.
+     - contain: cambia el tamaño de la imagen de fondo para asegurarse de que el elemento esté completamente cubierto.
+
+|background-repeat: define cómo se repite la imagen de fondo en el elemento
+
+|background-position:
+   -define la posición de la imagen de fondo, primer valor x, segundo y, si no se especifica un segundo valor éste será center
+   -aparte de valores numéricos podemos indicar el posicionamiento con las palabras: center, top, bottom, left and right
+
+|background-clip:
+   define cuánto debe extenderse el fondo dentro del elemento.
+
+|background-origin:
+   define el origen de la imagen de fondo.
+
+|background-attachment: 
+   define cómo se comportará la imagen de fondo al  desplazarse por la página
+*/
+
+.box {
+  margin: 2rem auto;
+  width: 300px;
+  height: 300px;
+  border: medium dashed cyan;
+}
+
+.bg-color {
+  background-color: darkblue;
+}
+
+.bg-image {
+  background-image: url("../assets/wallpaperflare.com_wallpaper.jpg");
+}
+.bg-size {
+  background-image: url("../assets/wallpaperflare.com_wallpaper.jpg");
+  background-size: 300px;
+  background-size: cover;
+  background-size: contain;
+}
+
+.bg-repeat {
+  background-image: url("../assets/wallpaperflare.com_wallpaper.jpg");
+  background-size: 100px;
+  background-repeat: repeat-x;
+  background-repeat: repeat-y;
+  background-repeat: no-repeat;
+  background-repeat: repeat;
+}
+
+.bg-position {
+  background-color: darkblue;
+  background-image: url("../assets/wallpaperflare.com_wallpaper.jpg");
+  background-size: 200px;
+  background-repeat: no-repeat;
+  background-position: 1rem 2rem;
+  background-position: 10%;
+  background-position: top;
+  background-position: center;
+}
+
+.bg-clip {
+  background-color: darkblue;
+  background-image: url("../assets/wallpaperflare.com_wallpaper.jpg");
+  background-size: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0.5rem;
+  background-clip: padding-box;
+  background-clip: border-box; /*defecto*/
+  background-clip: content-box;
+}
+
+.bg-origin {
+  background-color: darkblue;
+  background-image: url("../assets/wallpaperflare.com_wallpaper.jpg");
+  background-size: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0.5rem;
+  background-origin: padding-box; /*defecto*/
+  background-origin: border-box;
+  background-origin: content-box;
+}
+
+.bg-attachment {
+  background-color: darkblue;
+  background-image: url("../assets/wallpaperflare.com_wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 50vh;
+  background-attachment: scroll;
+  background-attachment: fixed;
+  /* background: rebeccapurple; */
+}
+
+.bg-multiple {
+  width: 50%;
+  height: 30vh;
+  background-image: url("../assets/youtube.svg"), url("../assets/stray.png");
+  background-repeat: repeat-x, no-repeat;
+  background-size: 10%, cover;
+}
+
+.bg-art {
+  width: 1000px;
+  height: 700px;
+  background: url("../assets/arbol.png") no-repeat center bottom,
+    url("../assets/aves.png") no-repeat center bottom,
+    url("../assets/cielo.png") no-repeat center top;
+}

@@ -1,0 +1,16 @@
+.table {
+  font-size: 2rem;
+  border-collapse: collapse;
+  border-collapse: separate; /*default*/
+  empty-cells: hide;
+  empty-cells: show; /*default*/
+}
+
+table,
+th,
+td {
+  border: thin solid black;
+  border-spacing: 10px;
+  border-spacing: 0;
+  border-spacing: 1rem;
+}
